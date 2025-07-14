@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS asada_db;
+USE asada_db;
+SOURCE ../schema/01_create_tables.sql;
+SOURCE ../schema/02_create_foreign_keys.sql;
+SOURCE ../schema/03_insert_initial_data.sql;
+SOURCE ../views/vista_abonados.sql;
+SOURCE ../procedures/sp_aceptar_solicitud.sql;
+SOURCE ../triggers/tr_auditoria_insert.sql;
+SOURCE ../functions/fn_calcular_edad.sql;
+SOURCE ../security/create_users.sql;
+SOURCE ../security/grant_permissions.sql;
